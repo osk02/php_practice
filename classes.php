@@ -12,6 +12,9 @@
         public function complete() {
             $this->status = true;
         }
+        public function __destruct() {
+            echo "Desctructor invoked";
+        }
     }
     $task = new Task('Constructor', 'Automatically called whenever an object is created.');
     // $task2 = new Task('Constructor2');
